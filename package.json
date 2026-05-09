@@ -1,19 +1,14 @@
 {
-  "name": "@workspace/integrations-gemini-ai",
+  "name": "@workspace/scripts",
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "exports": {
-    ".": "./src/index.ts",
-    "./batch": "./src/batch/index.ts",
-    "./image": "./src/image/index.ts"
-  },
-  "dependencies": {
-    "@google/genai": "^1.44.0",
-    "p-limit": "^7.3.0",
-    "p-retry": "^7.1.1"
+  "scripts": {
+    "hello": "tsx ./src/hello.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {
-    "@types/node": "catalog:"
+    "@types/node": "catalog:",
+    "tsx": "catalog:"
   }
 }
